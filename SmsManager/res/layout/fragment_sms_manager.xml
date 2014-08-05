@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7ade9"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/inputtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入标签" />
+
+    
+    
+    <Button android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="添加标签"
+    android:id="@+id/addtagbtn"/>
+    
+    <Button android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="查看标签"
+    android:id="@+id/viewtagbtn"/>
+	
+	<Button android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="所有短信"
+    android:id="@+id/allsmsbutton"/>
+
+</LinearLayout>
