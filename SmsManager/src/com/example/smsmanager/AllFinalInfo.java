@@ -2,19 +2,19 @@ package com.example.smsmanager;
 
 public class AllFinalInfo {
 	/** 
-	 * ËùÓĞµÄ¶ÌĞÅ 
+	 * æ‰€æœ‰çŸ­ä¿¡
 	 */  
 	public static final String SMS_URI_ALL = "content://sms";  
 	/** 
-	 * ÊÕ¼şÏä¶ÌĞÅ 
+	 * æ”¶ä»¶ç®±
 	 */  
 	public static final String SMS_URI_INBOX = "content://sms/inbox";  
 	/** 
-	 * ·¢¼şÏä¶ÌĞÅ 
+	 * å‘ä»¶ç®±
 	 */  
 	public static final String SMS_URI_SEND = "content://sms/sent";  
 	/** 
-	 * ²İ¸åÏä¶ÌĞÅ 
+	 * è‰ç¨¿ç®±
 	 */  
 	public static final String SMS_URI_DRAFT = "content://sms/draft";  
 	

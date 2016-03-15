@@ -46,7 +46,7 @@ public class ContactFragment extends Fragment
 		public void onClick(View v)
 		{
 			// TODO Auto-generated method stub
-			Toast.makeText(v.getContext(), "ÉÐÎ´Ö§³Ö¸Ã¹¦ÄÜ",
+			Toast.makeText(v.getContext(), "è¯¥åŠŸèƒ½æœªå¼€æ”¾",
 					Toast.LENGTH_SHORT).show();
 		}
 	}

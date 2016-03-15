@@ -137,11 +137,11 @@ public class SmsDao {
 					{ bean.getName(), bean.getPhoneNumber(), bean.getDate() , 
 							bean.getSmsbody() , bean.getType()  });
 			writeDB.close();
-			System.out.println("拦截到的短信已存入数据库");
+			System.out.println("鎭㈠鎴愬姛");
 			return true;
 		}
 		else {
-			System.out.println("存入数据库失败");
+			System.out.println("鎭㈠澶辫触");
 			return false;
 		}
 	}
@@ -166,7 +166,7 @@ public class SmsDao {
 					new String[]
 					{ bean.getPhoneNumber(), bean.getSmsbody()});
 			writeDB.close();
-			System.out.println("删除数据成功");
+			System.out.println("鍒犻櫎鍨冨溇鐭俊");
 		}
 		
 	}
@@ -182,7 +182,7 @@ public class SmsDao {
 			writeDB.execSQL("delete from smsbackup where  _id ="+delsmsid);
 			
 			writeDB.close();
-			System.out.println("删除数据成功");
+			System.out.println("鍒犻櫎澶囦唤");
 		}
 		
 	}
@@ -263,7 +263,7 @@ public class SmsDao {
                 System.out.println(smsinfo.get_id());
             cursor.close();  
         }else{
-        	System.out.println("获取bean错误");
+        	System.out.println("鏌ユ壘澶辫触");
         }
 		return smsinfo;
 		
@@ -301,13 +301,13 @@ public class SmsDao {
 					bean.getLocked() });
 			cursor.close();
 			writeDB.close();
-			System.out.println("短信已备份");
+			System.out.println("娣诲姞澶囦唤鎴愬姛");
 			return true;
 		}
 		else {
 			cursor.close();
 			writeDB.close();
-			System.out.println("短信已在数据库中，无须重复备份");
+			System.out.println("娣诲姞澶囦唤澶辫触");
 			return false;
 		}
 	}
@@ -336,11 +336,11 @@ public class SmsDao {
         	 
         	 
         	 context.getContentResolver().insert(Uri.parse("content://sms"), values);
-        	 System.out.println("短信已恢复");
+        	 System.out.println("鎭㈠鎴愬姛");
         	 cursor.close(); 
         	 return true;
             }  else{
-            	System.out.println("短信已存在");
+            	System.out.println("鎭㈠澶辫触");
             	cursor.close(); 
             	return false;
             }

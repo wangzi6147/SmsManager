@@ -40,7 +40,7 @@ public class TagActivity extends Activity{
 				String tag = text.getText().toString();
 				Intent intent = new Intent(TagActivity.this,
 						TagSmsActivity.class);
-				Bundle bundle = new Bundle();//该类用作携带数据
+				Bundle bundle = new Bundle();
 				bundle.putString("tag", tag);
 				intent.putExtras(bundle);
 				startActivity(intent);
@@ -57,7 +57,7 @@ public class TagActivity extends Activity{
 					@Override
 					public void onCreateContextMenu(ContextMenu arg0, View arg1,
 							ContextMenuInfo arg2) {
-						arg0.add(0, 0, 0, "删除");
+						arg0.add(0, 0, 0, "鍒犻櫎");
 						
 					}
 				});
@@ -99,10 +99,10 @@ public class TagActivity extends Activity{
 		SharedPreferences SharedPreferences = getSharedPreferences(FILENAME,Activity.MODE_PRIVATE);
 		Map<String, ?> allContent = SharedPreferences.getAll(); 
 		int i = 1;
-        //注意遍历map的方法  
+        //注锟斤拷锟斤拷锟絤ap锟侥凤拷锟斤拷  
         for(Map.Entry<String, ?>  entry : allContent.entrySet()){  
         	HashMap<String, String> m = new HashMap<String, String>();
-			m.put("name", "标签" + i);
+			m.put("name", "tag" + i);
 			m.put("text", entry.getKey());
 			list.add(m); 
 			i++;

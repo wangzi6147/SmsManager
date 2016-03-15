@@ -57,11 +57,11 @@ public class InterceptDao
 					{ bean.getNumber(), bean.getName(),
 							bean.getSensitiveWord() });
 			writeDB.close();
-			System.out.println("Ğ´ÈëÊı¾İ¿â³É¹¦");
+			System.out.println("æ·»åŠ æˆåŠŸ");
 			return true;
 		}
 		else {
-			System.out.println("Êı¾İÒÑ´æÔÚ");
+			System.out.println("æ·»åŠ å¤±è´¥");
 			return false;
 		}
 	}
@@ -76,14 +76,13 @@ public class InterceptDao
 					&& strSmsContent.contains(bean
 							.getSensitiveWord()))
 			{
-				System.out.println("²éÑ¯Êı¾İ¿â£¬¹Ø¼ü´Ê£º"
-						+ bean.getSensitiveWord()
-						+ "£¬¶ÌĞÅº¬ÓĞ¸Ã¹Ø¼ü´Ê");
+				System.out.println("åŒ…å«æ•æ„Ÿè¯"
+						+ bean.getSensitiveWord());
 				return true;
 			}
 		}
 
-		System.out.println("²éÑ¯Êı¾İ¿â£¬¶ÌĞÅ²»º¬ÓĞ¹Ø¼ü´Ê");
+		System.out.println("ä¸åŒ…å«æ•æ„Ÿè¯");
 		return false;
 
 	}
@@ -111,7 +110,7 @@ public class InterceptDao
 			cursor.close();
 			database.close();
 		}
-		System.out.println("²éÑ¯Êı¾İ¿â£¬ºÅÂë£º" + strNumber + "£¬ÊÇ·ñ´æÔÚ£º"
+		System.out.println("æ£€æµ‹å·ç ï¼š" + strNumber + " æ˜¯å¦åŒ¹é…ï¼š"
 				+ bContain);
 		return bContain;
 	}
@@ -128,7 +127,7 @@ public class InterceptDao
 			writeDB.close();
 			Log.w(null, bean.getName());
 			Log.w(null, bean.getNumber());
-			System.out.println("É¾³ıÊı¾İ³É¹¦");
+			System.out.println("åˆ é™¤é»‘åå•å·ç ");
 		}
 	}
 	
@@ -144,7 +143,7 @@ public class InterceptDao
 					new String[]
 					{  bean.getSensitiveWord()});
 			writeDB.close();
-			System.out.println("É¾³ıÊı¾İ³É¹¦");
+			System.out.println("åˆ é™¤æ•æ„Ÿè¯");
 		}
 	}
 }

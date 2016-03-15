@@ -77,8 +77,8 @@ public class BackupFragment extends Fragment
 					@Override
 					public void onCreateContextMenu(ContextMenu arg0, View arg1,
 							ContextMenuInfo arg2) {
-						arg0.add(1, 0, 0, "É¾³ı");
-						arg0.add(1, 1, 0, "»Ö¸´");
+						arg0.add(1, 0, 0, "åˆ é™¤");
+						arg0.add(1, 1, 0, "æ¢å¤");
 						
 					}
 				});
@@ -126,10 +126,10 @@ public class BackupFragment extends Fragment
 			
 			SmsInfoBean bean = smsDao.getBeanByIdFromSql(smsid);
 			if(smsDao.recover(bean)){
-				Toast.makeText(this.getActivity().getApplicationContext(), "¶ÌĞÅÒÑ»Ö¸´",
+				Toast.makeText(this.getActivity().getApplicationContext(), "æ¢å¤æˆåŠŸ",
 						Toast.LENGTH_SHORT).show();
 			}else{
-				Toast.makeText(this.getActivity().getApplicationContext(), "¶ÌĞÅÒÑ´æÔÚ£¬ÎŞĞë»Ö¸´",
+				Toast.makeText(this.getActivity().getApplicationContext(), "æ¢å¤å¤±è´¥",
 						Toast.LENGTH_SHORT).show();
 			}
 			break;

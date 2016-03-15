@@ -52,8 +52,8 @@ public class TagSmsActivity extends Activity{
 					@Override
 					public void onCreateContextMenu(ContextMenu arg0, View arg1,
 							ContextMenuInfo arg2) {
-						arg0.add(0, 0, 0, "删除");
-						arg0.add(0, 1, 0, "备份");
+						arg0.add(0, 0, 0, "鍒犻櫎");
+						arg0.add(0, 1, 0, "澶囦唤");
 						
 					}
 				});
@@ -100,10 +100,10 @@ public class TagSmsActivity extends Activity{
 			
 			SmsInfoBean bean = sc.getBeanById(smsid);
 			if(sc.addbackup(bean)){
-				Toast.makeText(this.getApplicationContext(), "短信已备份",
+				Toast.makeText(this.getApplicationContext(), "澶囦唤鎴愬姛",
 						Toast.LENGTH_SHORT).show();
 			}else{
-				Toast.makeText(this.getApplicationContext(),"短信已在数据库中，无须重复备份",
+				Toast.makeText(this.getApplicationContext(),"澶囦唤澶辫触",
 						Toast.LENGTH_SHORT).show();
 			}
 			break;

@@ -22,19 +22,19 @@ public class PagerAdapter extends FragmentPagerAdapter
 		switch (position)
 		{
 		case 0:
-			return "Í¨Ñ¶Â¼";
+			return "Í¨é€šè®¯å½•";
 
 		case 1:
-			return "²éÑ¯ÒÑÀ¹½Ø¶ÌĞÅ";
+			return "æŸ¥è¯¢å·²æ‹¦æˆªçŸ­ä¿¡";
 
 		case 2:
-			return "¶ÌĞÅ·ÖÀà¹ÜÀí";
+			return "çŸ­ä¿¡åˆ†ç±»ç®¡ç†";
 		case 3:
-			return "Ãô¸Ğ´Ê¹ÜÀí";
+			return "æ•æ„Ÿè¯ç®¡ç†";
 		case 4:
-			return "¶ÌĞÅ±¸·İ";
+			return "çŸ­ä¿¡å¤‡ä»½";
 		default:
-			throw new RuntimeException("Ã»ÓĞ¶ÔÓ¦µÄ±êÌâ");
+			throw new RuntimeException("æ²¡æœ‰å¯¹åº”çš„æ ‡é¢˜");
 		}
 	}
 

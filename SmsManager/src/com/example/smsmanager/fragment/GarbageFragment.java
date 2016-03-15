@@ -76,7 +76,7 @@ public class GarbageFragment extends Fragment {
 					@Override
 					public void onCreateContextMenu(ContextMenu arg0, View arg1,
 							ContextMenuInfo arg2) {
-						arg0.add(0, 0, 0, "É¾³ý");
+						arg0.add(0, 0, 0, "åˆ é™¤");
 						
 					}
 				});

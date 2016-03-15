@@ -96,20 +96,20 @@ public class SensitiveWordFragment extends Fragment
 				bean.setNumber("");
 				bean.setSensitiveWord(strSensitiveWord);
 				if(interceptDao.add(bean)){
-				Toast.makeText(v.getContext(), "保存成功",
+				Toast.makeText(v.getContext(), "娣诲姞鎴愬姛",
 						Toast.LENGTH_SHORT).show();
 				}else{
-					Toast.makeText(v.getContext(), "数据已存在",
+					Toast.makeText(v.getContext(), "娣诲姞澶辫触",
 							Toast.LENGTH_SHORT).show();
 				}
 			} else
-				Toast.makeText(v.getContext(), "输入的敏感词不合法！",
+				Toast.makeText(v.getContext(), "鏍煎紡閿欒",
 						Toast.LENGTH_SHORT).show();
 		}
 
 		private boolean isValidate(String strSensitiveWord)
 		{
-			Log.w(getClass().getName(), "尚未完全完成");
+			Log.w(getClass().getName(), "鏍煎紡鏄惁閿欒");
 			if ("".equals(strSensitiveWord))
 				return false;
 			return true;
@@ -135,7 +135,7 @@ public class SensitiveWordFragment extends Fragment
 					@Override
 					public void onCreateContextMenu(ContextMenu arg0, View arg1,
 							ContextMenuInfo arg2) {
-						arg0.add(2, 0, 0, "删除");
+						arg0.add(2, 0, 0, "鍒犻櫎");
 						
 					}
 				});

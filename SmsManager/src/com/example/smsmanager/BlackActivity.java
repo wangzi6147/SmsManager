@@ -36,7 +36,7 @@ public class BlackActivity extends Activity
 
 		setupView();
 	}
-
+	
 	private void setupView()
 	{
 		Button btnSave = (Button) findViewById(R.id.btnSaveToDB);
@@ -85,7 +85,7 @@ public class BlackActivity extends Activity
 								Context.INPUT_METHOD_SERVICE);
 				imm.hideSoftInputFromWindow(
 						etName.getWindowToken(), 0);
-				Toast.makeText(v.getContext(), "±£´æ³É¹¦",
+				Toast.makeText(v.getContext(), "ä¿å­˜æˆåŠŸ",
 						Toast.LENGTH_SHORT).show();
 				}
 				else{
@@ -95,18 +95,18 @@ public class BlackActivity extends Activity
 									Context.INPUT_METHOD_SERVICE);
 					imm.hideSoftInputFromWindow(
 							etName.getWindowToken(), 0);
-					Toast.makeText(v.getContext(), "Êı¾İÒÑ´æÔÚ",
+					Toast.makeText(v.getContext(), "ä¿å­˜å¤±è´¥",
 							Toast.LENGTH_SHORT).show();
 				}
 			} else
-				Toast.makeText(v.getContext(), "ÊäÈëµÄĞÕÃû¡¢ºÅÂë²»ºÏ·¨£¡",
+				Toast.makeText(v.getContext(), "é»‘åå•ä¿¡æ¯é”™è¯¯",
 						Toast.LENGTH_SHORT).show();
 		}
 
 		private boolean isValidate(String strName, String strNumber)
 		{
 			// TODO
-			Log.w(getClass().getName(), "ÉĞÎ´ÍêÈ«Íê³É");
+			Log.w(getClass().getName(), "æ£€æµ‹è¾“å…¥ä¿¡æ¯æ˜¯å¦æ­£ç¡®");
 
 			if ("".equals(strName) || "".equals(strNumber))
 				return false;
@@ -151,7 +151,7 @@ public class BlackActivity extends Activity
 					@Override
 					public void onCreateContextMenu(ContextMenu arg0, View arg1,
 							ContextMenuInfo arg2) {
-						arg0.add(0, 0, 0, "É¾³ı");
+						arg0.add(0, 0, 0, "åˆ é™¤");
 						
 					}
 				});
